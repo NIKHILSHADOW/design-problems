@@ -18,6 +18,9 @@
       - [UseCase Diagram](#usecase-diagram-2)
       - [Class Diagram](#class-diagram-2)
       - [Schema Diagram](#schema-diagram)
+    - [Version-4](#version-4)
+      - [Class Diagram](#class-diagram-3)
+      - [Schema Design](#schema-design-2)
 
 ### version-1
 
@@ -167,5 +170,94 @@ erDiagram
         Student_id int
         Course_id int
     }
+
+```
+
+### Version-4
+
+• Institute will provide different **modules** for students to learn i.e. Data Structures, Algorithms, etc.
+• Each **student** can enroll for **multiple modules**.
+• Each **module** will have **multiple exams**.
+• Each **exam** has a **name** and a **duration**.
+• One **exam** can be part of **multiple modules**.
+• For each **exam**, the **student** will be given a **score**.
+
+#### Class Diagram
+
+```mermaid
+    classDiagram
+        class Student {
+            - String name
+            - String email
+            - String phone
+            - String password
+            - Module[] modules
+        }
+
+        class Module {
+            - name String
+            - Exam[] exams
+        }
+
+        class Exam {
+            - name String
+            - duration int
+        }
+
+        Student "m" --o "n" Module
+        Student "m" --o "n" Exam
+
+        Module "m" --o "n" Exam
+
+
+```
+
+#### Schema Design
+
+```mermaid
+
+    erDiagram
+
+    Students {
+        id int PK
+        name varchar(30)
+        email varchar(30)
+        password varchar(30)
+        phone varchar(30)
+    }
+
+    Modules {
+        id int Pk
+        name varchar(30)
+    }
+
+    Exam {
+        id int PK
+        name varchar(30)
+        duration int
+    }
+
+    Student_Module {
+        id int PK
+        student_id int
+        module_id int
+    }
+
+    Module_Exam {
+        id int PK
+        module_id int
+        student_id int
+    }
+
+
+    Student_Exam {
+        id int Pk
+        exam_id int
+        student_id int
+        score int
+    }
+
+
+
 
 ```

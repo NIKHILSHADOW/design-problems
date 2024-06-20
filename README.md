@@ -8,4 +8,4 @@
 
 ### Institute
 
-[institute](./src/main/java/com/example/institute/README.md)
+- [institute](./src/main/java/com/example/institute/README.md)
