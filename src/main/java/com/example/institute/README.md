@@ -17,3 +17,5 @@ Following are the requirements of the Institute application:
 • Students should be able to view their profile which includes their name, email address and phone number.
 
 #### USECASE Diagram
+
+![Institute-v1](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NIKHILSHADOW/design-problems/master/src/main/java/com/example/institute/static/institute.iuml)
