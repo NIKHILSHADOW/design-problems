@@ -1,0 +1,22 @@
+
+@startuml
+
+    left to right direction
+
+    actor student
+
+    rectangle institute {
+        usecase "login" as login
+        usecase "check if valid user" as validUser
+        usecase "view Profile" as viewPRofile
+        usecase "enroll for course" as enroll
+    }
+
+    student --> login
+    student --> viewPRofile
+    student --> enroll
+
+    login --> validUser
+
+
+@enduml
