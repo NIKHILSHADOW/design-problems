@@ -26,8 +26,8 @@
 
 Following are the requirements of the Institute application:
 
-• A **student** should be able to login with their **email address** and **password**.
-• Students should be able to view their profile which includes their **name**, email address and **phone number**.
+- A **student** should be able to login with their **email address** and **password**.
+- Students should be able to view their profile which includes their **name**, email address and **phone number**.
 
 #### USECASE Diagram
 
@@ -66,9 +66,9 @@ erDiagram
 
 ### Version-2
 
-• We will provide multiple courses as a part of the Institute application.
-• Every student can enroll for a single course.
-• Every course has a name.
+- We will provide multiple courses as a part of the Institute application.
+- Every student can enroll for a single course.
+- Every course has a name.
 
 #### Usecase Diagram
 
@@ -119,7 +119,7 @@ erDiagram
 
 ### Version-3
 
-• Each student can enroll for exactly 4 courses
+- Each student can enroll for exactly 4 courses
 
 #### UseCase Diagram
 
@@ -175,12 +175,12 @@ erDiagram
 
 ### Version-4
 
-• Institute will provide different **modules** for students to learn i.e. Data Structures, Algorithms, etc.
-• Each **student** can enroll for **multiple modules**.
-• Each **module** will have **multiple exams**.
-• Each **exam** has a **name** and a **duration**.
-• One **exam** can be part of **multiple modules**.
-• For each **exam**, the **student** will be given a **score**.
+- Institute will provide different **modules** for students to learn i.e. Data Structures, Algorithms, etc.
+- Each **student** can enroll for **multiple modules**.
+- Each **module** will have **multiple exams**.
+- Each **exam** has a **name** and a **duration**.
+- One **exam** can be part of **multiple modules**.
+- For each **exam**, the **student** will be given a **score**.
 
 #### Class Diagram
 
