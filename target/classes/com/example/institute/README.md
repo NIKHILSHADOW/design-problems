@@ -205,7 +205,6 @@ erDiagram
         }
 
         Student "m" --o "n" Module
-        Student "m" --o "n" Exam
 
         Module "m" --o "n" Exam
 
@@ -254,6 +253,7 @@ erDiagram
         id int Pk
         exam_id int
         student_id int
+        module_id int
         score int
     }
 
