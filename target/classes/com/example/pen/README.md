@@ -96,4 +96,3 @@ FountainPen --* Nib
 ```
 
 - Here we are implementing write method in each type of pen, but some pens are having same implementing, we are duplicating code.
--
